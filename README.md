@@ -22,10 +22,10 @@ pnpm i next-img-base64ify
 'use client';
 
 import React, { useState } from 'react';
-import { _64ify } from 'next-img-base64ify';
+import { _64ify } from 'next-file-64ify';
 
 const MyFileUpload = () => {
-  const [myFile, setMyFile] = useState<File | null>(null);
+  const [myFile, setMyFile] = (useState < File) | (null > null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
