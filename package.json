@@ -1,7 +1,7 @@
 {
-  "name": "next-file-64ify",
-  "version": "2.1.12",
-  "description": "A package for handling base64 encoding and decoding in Next.js applications",
+  "name": "next-img-base64ify",
+  "version": "1.0.0",
+  "description": "A lightweight and efficient package for Base64 encoding and decoding images and files in Next.js and React applications.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
@@ -10,27 +10,33 @@
     "build": "tsup"
   },
   "keywords": [
-    "base64ify",
-    "base64-encoder",
-    "react-base64",
-    "next-base64",
-    "file-base64",
+    "base64",
+    "base64-encoding",
+    "base64-decoding",
+    "next.js",
+    "react",
+    "image-processing",
+    "file-handling",
+    "file-upload",
     "image-base64",
-    "file handling"
+    "convert-image",
+    "next.js-image",
+    "react-file-encoder",
+    "base64-converter"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Md-Asikuzzaman/next-file-64ify.git"
+    "url": "git+https://github.com/Md-Asikuzzaman/next-img-base64ify.git"
   },
-  "author": "md asikuzzaman | email:mdasikuzzaman.en@gmail.com",
-  "license": "ISC",
+  "author": "Md Asikuzzaman <mdasikuzzaman.en@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Md-Asikuzzaman/next-file-64ify/issues"
+    "url": "https://github.com/Md-Asikuzzaman/next-img-base64ify/issues"
   },
   "devDependencies": {
     "@types/node": "^20.12.11",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
-  "homepage": "https://github.com/Md-Asikuzzaman/next-file-64ify#readme"
+  "homepage": "https://github.com/Md-Asikuzzaman/next-img-base64ify#readme"
 }

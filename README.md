@@ -1,22 +1,28 @@
-## next-file-64ify 📁
-The **"next-file-64ify"** package simplifies file handling in **Next.js/React.js** applications by converting selected files to **base64** strings. It provides easy-to-use functions for validating file types and sizes, ensuring smooth and efficient file uploads. It is ideal for image files and integrates seamlessly with React components for streamlined file management.
+## next-img-base64ify 📁
+
+The **"next-img-base64ify"** package simplifies file handling in **Next.js/React.js** applications by converting selected files to **base64** strings. It provides easy-to-use functions for validating file types and sizes, ensuring smooth and efficient file uploads. It is ideal for image files and integrates seamlessly with React components for streamlined file management.
 
 ## Installation:
-![GitHub package.json version](https://img.shields.io/github/package-json/v/Md-Asikuzzaman/next-file-64ify)
- ```bash
-npm i next-file-64ify
-# or
-yarn add next-file-64ify
-# or
-pnpm i next-file-64ify
-```
-## Quick Start:
-#### ✔ Simply connect with your Next.js or React.js application 🤝.
- ```js
-"use client";
 
-import React, { useState } from "react";
-import { _64ify } from "next-file-64ify";
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Md-Asikuzzaman/next-img-base64ify)
+
+```bash
+npm i next-img-base64ify
+# or
+yarn add next-img-base64ify
+# or
+pnpm i next-img-base64ify
+```
+
+## Quick Start:
+
+#### ✔ Simply connect with your Next.js or React.js application 🤝.
+
+```js
+'use client';
+
+import React, { useState } from 'react';
+import { _64ify } from 'next-img-base64ify';
 
 const MyFileUpload = () => {
   const [myFile, setMyFile] = useState<File | null>(null);
@@ -29,7 +35,7 @@ const MyFileUpload = () => {
           minSize: 10,
           maxSize: 2048,
         },
-        allowedTypes: ["image/jpeg", "image/png"],
+        allowedTypes: ['image/jpeg', 'image/png'],
       });
       console.log({ data, isLoading, isError, isValidSize });
     }
@@ -44,11 +50,11 @@ const MyFileUpload = () => {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="file"
-        accept="image/jpeg, image/png"
+        type='file'
+        accept='image/jpeg, image/png'
         onChange={handleChange}
       />
-      <button type="submit">Upload File</button>
+      <button type='submit'>Upload File</button>
     </form>
   );
 };
@@ -57,6 +63,7 @@ export default MyFileUpload;
 ```
 
 ## Customizing File Types and Sizes:
+
 #### ✔ 1. Set File Size Limits
 
 ```js
@@ -70,6 +77,7 @@ const { data, isLoading, isError, isValidSize } = await _64ify(myFile, {
 ```
 
 #### ✔ 2. Add More Allowed File Types (for the package)
+
 ```js
 const { data, isLoading, isError, isValidSize } = await _64ify(myFile, {
  allowedTypes: ["image/jpeg", "image/png", "image/webp"],
@@ -78,11 +86,13 @@ const { data, isLoading, isError, isValidSize } = await _64ify(myFile, {
 ```
 
 #### ✔ 3. Update File Input to Accept More Types (for the browser)
+
 ```js
 <input type="file" accept="image/jpeg, image/png, "image/webp", ..."/>
-  ```
+```
 
 #### ✔ Most commonly used file types.
+
 ```js
 // Copy and paste what you need 😊
 {
